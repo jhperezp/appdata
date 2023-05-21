@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET')
 {
 
       //Mostrar lista de post
-      $sql = $dbConn->prepare("SELECT * FROM TB_CANDIDATOS");
+      $sql = $dbConn->prepare("CALL CONSULTAR_CANDIDATOS()");
       $sql->execute();
       $sql->setFetchMode(PDO::FETCH_ASSOC);
       header("HTTP/1.1 200 OK");
