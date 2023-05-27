@@ -1,0 +1,3 @@
+#Ocultar directorios
+Options -Indexes
+ServerSignature Off
